@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import myImage from "../../public/sabeeh.jpeg";
 import { allProjects, allTestimonials, AllExperience } from "./data";
+
 export default function Home() {
   return (
     <>
@@ -483,19 +484,26 @@ export default function Home() {
             {AllExperience.map((exp, index) => {
               const delayClass = index === 0 ? "d1" : index === 1 ? "d2" : "d3";
               const bullets = exp.bulletPoints;
-              
+
               return (
-                <div key={exp.id} className={`reveal in ${delayClass} relative pl-8 border-l border-zinc-200 dark:border-zinc-800 ml-4 md:ml-0`}>
+                <div
+                  key={exp.id}
+                  className={`reveal in ${delayClass} relative pl-8 border-l border-zinc-200 dark:border-zinc-800 ml-4 md:ml-0`}
+                >
                   <div className="absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full bg-accent ring-4 ring-white dark:ring-zinc-950"></div>
-                  
+
                   <div className="bg-zinc-50 dark:bg-zinc-900/50 rounded-2xl p-6 sm:p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent/50 transition-colors">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                       <div>
                         <h3 className="font-display font-bold text-xl sm:text-2xl text-zinc-900 dark:text-white mb-1">
                           {exp.title}
                         </h3>
-                        <p className="text-zinc-600 dark:text-zinc-400 font-medium">{exp.company}</p>
-                        <p className="text-sm text-zinc-500 mt-1">{exp.location}</p>
+                        <p className="text-zinc-600 dark:text-zinc-400 font-medium">
+                          {exp.company}
+                        </p>
+                        <p className="text-sm text-zinc-500 mt-1">
+                          {exp.location}
+                        </p>
                       </div>
                       <div className="shrink-0">
                         <span className="inline-block bg-white dark:bg-zinc-800 text-accent text-xs font-medium border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full">
@@ -504,7 +512,9 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <ul className={`space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed ${exp.tags && exp.tags.length > 0 ? "mb-6" : ""}`}>
+                    <ul
+                      className={`space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed ${exp.tags && exp.tags.length > 0 ? "mb-6" : ""}`}
+                    >
                       {bullets?.map((bullet, i) => (
                         <li key={i} className="flex items-start gap-3">
                           <span className="text-accent mt-1 shrink-0">✦</span>
@@ -512,11 +522,14 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    
+
                     {exp.tags && exp.tags.length > 0 && (
                       <div className="flex flex-wrap gap-2 pt-6 border-t border-zinc-200 dark:border-zinc-800">
                         {exp.tags.map((tag) => (
-                          <span key={tag} className="text-xs bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 px-3 py-1 rounded-full transition-colors hover:border-accent">
+                          <span
+                            key={tag}
+                            className="text-xs bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 px-3 py-1 rounded-full transition-colors hover:border-accent"
+                          >
                             {tag}
                           </span>
                         ))}
@@ -682,8 +695,10 @@ export default function Home() {
                   together
                 </h2>
                 <p className="reveal in d2 text-zinc-400 leading-relaxed mb-8">
-                  I'm open to full-stack and frontend development opportunities, short or long-term.
-                  Whether you need a complete MERN stack application, a robust API, or a responsive frontend — let's talk.
+                  I'm open to full-stack and frontend development opportunities,
+                  short or long-term. Whether you need a complete MERN stack
+                  application, a robust API, or a responsive frontend — let's
+                  talk.
                 </p>
 
                 <div className="reveal in d3 flex flex-col gap-4">
