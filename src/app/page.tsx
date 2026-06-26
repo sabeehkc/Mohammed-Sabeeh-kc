@@ -331,21 +331,20 @@ export default function Home() {
                 who I am
               </h2>
               <p className="reveal in d2 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                I am a Junior Software Engineer with 1.5+ years of professional
-                experience specializing in frontend development using React.js,
-                Next.js, TypeScript, Redux Toolkit, and modern UI technologies.
-                I am experienced in building scalable admin dashboards, HRMS
-                platforms, booking systems, and business management
-                applications.
+                I am a MERN Stack Developer with 1.5+ years of professional
+                experience, primarily focused on frontend development. I
+                specialize in building modern, responsive, and scalable web
+                applications using React.js, Next.js, TypeScript, Redux Toolkit,
+                and other modern frontend technologies.
               </p>
               <p className="reveal in d3 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">
-                Skilled in API integration, state management, form validation,
-                responsive design, and performance optimization, I also possess
-                working knowledge of full-stack development with Node.js,
-                Express.js, MongoDB, and PostgreSQL. Currently, I am pursuing a
-                Bachelor of Computer Applications (BCA) while contributing to
-                production-grade software solutions in a collaborative
-                development environment.
+                Along with frontend expertise, I have hands-on experience with
+                the MERN stack, including Node.js, Express.js, MongoDB, and REST
+                API development. I have contributed to production-grade admin
+                dashboards, HRMS platforms, booking systems, and business
+                management applications. Currently, I am pursuing a Bachelor of
+                Computer Applications (BCA) while continuously expanding my
+                full-stack development skills.
               </p>
               <div className="reveal in d4">
                 <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-4">
