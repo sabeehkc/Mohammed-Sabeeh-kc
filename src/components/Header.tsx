@@ -57,7 +57,7 @@ export default function Header() {
   ];
 
   const handleCvDownload = () => {
-    window.open("/Mohammed_Sabeeh_KC.pdf", "_blank");
+    window.open("/MohammedSabeehKC.pdf", "_blank");
   };
 
   return (

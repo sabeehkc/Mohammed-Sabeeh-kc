@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import myImage from "../../public/sabeeh.jpeg";
 import { allProjects, allTestimonials, AllExperience } from "./data";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -764,83 +765,7 @@ export default function Home() {
               </div>
 
               <div className="reveal in d2">
-                <form action="#" method="POST" noValidate>
-                  <div className="flex flex-col gap-4">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label
-                          htmlFor="fname"
-                          className="block text-xs font-medium text-zinc-400 mb-1.5"
-                        >
-                          Name <span aria-hidden="true">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          id="fname"
-                          name="name"
-                          placeholder="Jane Smith"
-                          required
-                          autoComplete="name"
-                          className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="femail"
-                          className="block text-xs font-medium text-zinc-400 mb-1.5"
-                        >
-                          Email <span aria-hidden="true">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          id="femail"
-                          name="email"
-                          placeholder="jane@company.com"
-                          required
-                          autoComplete="email"
-                          className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="fsubject"
-                        className="block text-xs font-medium text-zinc-400 mb-1.5"
-                      >
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        id="fsubject"
-                        name="subject"
-                        placeholder="Project inquiry"
-                        className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="fmessage"
-                        className="block text-xs font-medium text-zinc-400 mb-1.5"
-                      >
-                        Message <span aria-hidden="true">*</span>
-                      </label>
-                      <textarea
-                        id="fmessage"
-                        name="message"
-                        rows={4}
-                        placeholder="Tell me about your project..."
-                        required
-                        className="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors resize-none"
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      className="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors"
-                    >
-                      Send message &rarr;
-                    </button>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>

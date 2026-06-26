@@ -13,11 +13,12 @@ export const allProjects = [
       "JWT",
       "SCSS",
       "Material UI",
+      "Socket.io",
     ],
     year: "2025",
-    desc: "A full-stack property rental platform with user authentication, property listings, and wishlist management.",
+    desc: "A full-stack property rental platform with user authentication, property listings, wishlist management, and real-time chat with hosts via Socket.io.",
     longDesc:
-      "Home Heaven is a comprehensive full-stack property rental platform designed to simplify the process of finding and listing rental properties. It comes with secure user authentication, advanced property filtering, robust search functionality, and seamless booking workflows. By leveraging Redux for global state management and Material UI combined with SCSS for the frontend, the platform offers a highly responsive and intuitive user experience. Integrated features like drag-and-drop image uploads and secure media storage make property management effortless.",
+      "Home Heaven is a comprehensive full-stack property rental platform designed to simplify the process of finding and listing rental properties. It comes with secure user authentication, advanced property filtering, robust search functionality, and seamless booking workflows. A standout feature is the integrated real-time chat system powered by Socket.io, allowing users to communicate directly with property hosts. By leveraging Redux for global state management and Material UI combined with SCSS for the frontend, the platform offers a highly responsive and intuitive user experience. Integrated features like drag-and-drop image uploads and secure media storage make property management effortless.",
     img: "/project_image/homeHeven.png",
     url: "/projects/1",
   },
@@ -74,6 +75,32 @@ export const allProjects = [
       "This Admin Dashboard Template is a highly reusable starter kit designed for rapid application development. Built with Next.js, TypeScript, Tailwind CSS, and Shadcn UI, it includes pre-built layouts, navigation systems, form components, tables, modals, and customizable dashboard widgets. Its scalable component architecture and focus on code reusability make it incredibly easy to integrate authentication, API services, and business modules, boosting developer productivity.",
     img: "/project_image/adminDashboardTemplate.png",
     url: "/projects/4",
+  },
+  {
+    id: 5,
+    title: "IndorePlants",
+    category: "webapp",
+    categoryLabel: "Web App",
+    tags: ["HTML", "Tailwind CSS", "JavaScript"],
+    year: "2024",
+    desc: "A responsive plant showcase website created using HTML, Tailwind CSS, and JavaScript for handling smooth animations.",
+    longDesc:
+      "IndorePlants is a visually engaging platform designed to showcase indoor plants. It is built using HTML for a solid semantic foundation and Tailwind CSS for rapid, utility-driven styling that ensures a responsive design across devices. JavaScript is seamlessly integrated to handle dynamic interactions and smooth animations, creating a modern and immersive user experience.",
+    img: "/project_image/IndorePlants.png",
+    url: "https://sabeehkc.github.io/IndorePlants-TailwindCSS",
+  },
+  {
+    id: 6,
+    title: "Movie Search App",
+    category: "webapp",
+    categoryLabel: "Web App",
+    tags: ["React", "JavaScript", 'Third-party API'],
+    year: "2024",
+    desc: "A React-based web application that allows users to search for movies using a third-party API to display titles and release years.",
+    longDesc:
+      "Movie Search App is a dynamic web application built with React and JavaScript that leverages a third-party API to fetch movie data. It features a straightforward search interface where users can look up any movie, from the latest releases to classic films. The application efficiently retrieves and displays essential information such as the movie's title and its release year, providing a seamless and quick way to explore cinematic history.",
+    img: "/project_image/movieApp.png",
+    url: "https://movie-search-app-sigma-five.vercel.app",
   },
 ];
 
