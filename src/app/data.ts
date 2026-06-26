@@ -129,7 +129,7 @@ export const AllExperience = [
     title: "Junior Software Engineer – Front-End Focus",
     company: "Luvid Technologies",
     location: "Calicut, Kerala",
-    duration: "Dec 2024 – Present",
+    duration: "Dec 2024 – Jun 2026",
     bulletPoints: [
       "Developed and maintained production-ready web applications using React.js, Next.js, TypeScript, and Redux Toolkit.",
       "Integrated REST APIs and implemented efficient data-fetching strategies using RTK Query.",
